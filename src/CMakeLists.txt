@@ -20,6 +20,7 @@ add_library(kompute Algorithm.cpp
     Core.cpp)
 
 add_library(kompute::kompute ALIAS kompute)
+set_target_properties(kompute PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 
 # Set version for shared libraries.
 set_target_properties(kompute

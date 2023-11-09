@@ -186,7 +186,7 @@ if(KOMPUTE_OPT_USE_BUILT_IN_FMT)
         GIT_TAG 10.1.1) # Source: https://github.com/fmtlib/fmt/releases
     FetchContent_MakeAvailable(fmt)
 else()
-    find_package(fmt REQUIRED)
+    find_package(fmt REQUIRED )
 endif()
 
 # GoogleTest
