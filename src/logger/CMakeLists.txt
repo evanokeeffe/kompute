@@ -66,6 +66,7 @@ if(NOT KOMPUTE_OPT_LOG_LEVEL_DISABLED)
         endif()
     else()
         target_link_libraries(kp_logger PUBLIC fmt::fmt)
+        set_property(TARGET kp_logger PROPERTY POSITION_INDEPENDENT_CODE ON)
     endif()
 endif()
 
